@@ -1,9 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Link from "next/link";
-import { skills} from '../profile'
+import { skills,
+        experiences,
+        projects
+        } from '../profile'
 
-console.log(skills)
+
 
 const Index = () => {
   return (
@@ -43,7 +46,7 @@ const Index = () => {
             <h1>Skills</h1>
 
             {/* Skill Progress  */}
-            {/*skills.map(({ skill, percentage }, i) => (
+            {skills.map(({ skill, percentage }, i) => (
               <div className="py-3" key={i}>
                 <h5>{skill}</h5>
                 <div className="progress ">
@@ -57,7 +60,7 @@ const Index = () => {
                   ></div>
                 </div>
               </div>
-            ))*/}
+            ))}
           </div>
         </div>
       </div>
@@ -70,7 +73,7 @@ const Index = () => {
 
             <ul>
               {/* List Item Experience */}
-              {/*experiences.map(({ title, from, to }, index) => (
+              {experiences.map(({ title, from, to }, index) => (
                 <li key={index}>
                   <h3>{title}</h3>
                   <h5>
@@ -83,7 +86,7 @@ const Index = () => {
                     inventore rem. Quo laudantium temporibus cupiditate. Aut?
                   </p>
                 </li>
-              ))*/}
+              ))}
             </ul>
             <Link href="/hireme">
               <a className="btn btn-light">Know More</a>
