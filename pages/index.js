@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Layout from '../components/Layout';
 
 const Index = () => {
   return (
-    <div>
-      <h1>
-        Index
-      </h1>
-    </div>
+    <Layout>
+      <h2>index</h2>
+    </Layout>
   )
 }
 
