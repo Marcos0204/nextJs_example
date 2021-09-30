@@ -104,7 +104,7 @@ const Index = () => {
               <div className="col-md-12 my-2">
                 <h1 className="text-center text-light">Portfolio</h1>
               </div>
-              {/*projects.map(({ name, description, image }, index) => (
+              {projects.map(({ name, description, image }, index) => (
                 <div className="col-md-4 p-2" key={index}>
                   <div className="card h-100">
                     <div className="overflow">
@@ -121,7 +121,7 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-              ))*/}
+              ))}
 
               <div className="col-md-12 mt-4">
                 <div className="text-center">
